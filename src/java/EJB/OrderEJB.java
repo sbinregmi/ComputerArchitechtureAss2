@@ -9,7 +9,6 @@ import assignment2.Entity.Order;
 import javax.annotation.Resource;
 import javax.ejb.*;
 import javax.ejb.SessionContext;
-import javax.annotation.security.RolesAllowed;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -30,10 +29,6 @@ public class OrderEJB {
     @Resource
     SessionContext ctx;
 
-
-	
-	
-	
 	
 	//find all orders
     public List<Order> findAll() {
