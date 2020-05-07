@@ -33,12 +33,12 @@ public class CustomerEJB {
 	
 	
 	//find all customer
-    public List<Customer> findAllCustomer() {
-        Query query = em.createNamedQuery("CD.findAllCustomer");
+    public List<Customer> findAll() {
+        Query query = em.createNamedQuery("Customer.findAll");
         return query.getResultList();
     }
 	//find customer by name
-    public Customer findCustomerByName(String name) {
+    public Customer findByName(String name) {
         return em.find(Customer.class, name);
     }
 	//create a Customer

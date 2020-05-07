@@ -36,12 +36,12 @@ public class OrderEJB {
 	
 	
 	//find all orders
-    public List<Order> findAllOrder() {
-        Query query = em.createNamedQuery("CD.findAllOrder");
+    public List<Order> findAll() {
+        Query query = em.createNamedQuery("Order.findAll");
         return query.getResultList();
     }
 	//find order by Id
-    public Order findOrderById(Long id) {
+    public Order findById(Long id) {
         return em.find(Order.class, id);
     }
 	//create a Order

@@ -35,14 +35,14 @@ public class GameEJB {
 	
 	
 	//find all games
-    public List<Game> findGames() {
-        Query query = em.createNamedQuery("Book.findAllGames");
+    public List<Game> findAll() {
+        Query query = em.createNamedQuery("Game.findAll");
         return query.getResultList();
     }
 
 	//find game by name
-	public Game findGameByName(String name) {
-        return em.find(Game.class, name);
+	public Game findByTitle(String title) {
+        return em.find(Game.class, title);
     }
 	//create a game
 	 public Game createGame(Game game) {

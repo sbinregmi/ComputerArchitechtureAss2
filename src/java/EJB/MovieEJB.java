@@ -32,14 +32,14 @@ public class MovieEJB {
 
     //Public Methods   
 	//find all movies
-    public List<Movie> findMovies() {
-        Query query = em.createNamedQuery("Book.findAllMovies");
+    public List<Movie> findAll() {
+        Query query = em.createNamedQuery("Movie.findAll");
         return query.getResultList();
     }
 
 	//find movies by name
-	public Movie findMovieByName(String name) {
-        return em.find(Movie.class, name);
+	public Movie findByTitle(String title) {
+        return em.find(Movie.class, title);
     }
 	//create a movie
 	 public Movie createMovie(Movie movie) {
