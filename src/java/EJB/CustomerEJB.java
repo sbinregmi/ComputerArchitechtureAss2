@@ -9,15 +9,11 @@ import assignment2.Entity.Customer;
 import javax.annotation.Resource;
 import javax.ejb.*;
 import javax.ejb.SessionContext;
-import javax.annotation.security.RolesAllowed;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.util.List;
-/**
- *
- * @author SabinRegmi
- */
+
 @Stateless
 @LocalBean
 public class CustomerEJB {

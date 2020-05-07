@@ -5,10 +5,6 @@
  */
 package assignment2;
 
-/**
- *
- * @author SabinRegmi
- */
 public class Assignment2 {
     /**
      * @param args the command line arguments
